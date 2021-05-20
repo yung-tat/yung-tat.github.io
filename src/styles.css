@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #e9ecef;
@@ -24,6 +28,7 @@ svg:hover {
 
 #my-name {
   font-size: 8em;
+  margin-top: 0.25em;
   margin-bottom: 0;
 }
 
