@@ -1,0 +1,40 @@
+#nav-bar {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  font-size: 22px;
+  z-index: 5;
+  transition: 0.2s;
+}
+
+#nav-bar:hover {
+  background-color: #fffee2;
+}
+
+.nav-button {
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-button:visited {
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #ffe45d;
+}
+
+.nav-special {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.nav-special:hover {
+  background-color: #eac71a;
+}
+
+.nav-right {
+  float: right;
+}
