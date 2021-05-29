@@ -30,3 +30,12 @@
   overflow: hidden;
   text-align: center;
 }
+
+.portfolio-picture-container {
+  width: 400px;
+  overflow: hidden;
+}
+
+.portfolio-picture {
+  width: 400px;
+}
