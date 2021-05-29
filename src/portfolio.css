@@ -19,7 +19,7 @@
 .portfolio-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #434C54;
   width: 450px;
@@ -33,9 +33,15 @@
 
 .portfolio-picture-container {
   width: 400px;
+  height: 200px;
   overflow: hidden;
 }
 
 .portfolio-picture {
   width: 400px;
+}
+
+.portfolio-title {
+  height: 130px;
+  margin-top: 70px;
 }
