@@ -22,8 +22,10 @@
   justify-content: flex-start;
   align-items: center;
   background-color: #434C54;
-  width: 450px;
-  height: 600px;
+  max-width: 450px;
+  width: 80%;
+  min-height: 600px;
+  height: auto;
   margin: 0 10px 20px 10px;
   border-radius: 30px;
   box-shadow: 0px 0px 16px 2px #000;
@@ -38,7 +40,7 @@
 }
 
 .portfolio-picture {
-  width: 400px;
+  width: 100%;
 }
 
 .portfolio-title {
