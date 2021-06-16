@@ -1,0 +1,14 @@
+.jumbotron-custom {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my-name {
+  font-size: 10em;
+}
+
+.desc {
+  font-size: 4em;
+}
