@@ -18,7 +18,7 @@ export default class StackIcon extends React.Component<IStackIconProps> {
         <div className='text-gray-200'>{this.props.label}</div>
         <div className='w-28 h-4 border border-slate-800 bg-slate-700 rounded overflow-hidden'>
           <div
-            className={'bg-' + this.props.color + '-400 visible h-full rounded'}
+            className={this.props.color + ' visible h-full rounded'}
             style={{width: this.props.fill + "%"}}
           >
           </div>
