@@ -21,6 +21,8 @@ export default class About extends React.Component<IAboutProps> {
           Yo, I'm a student at the University of Waterloo majoring in Honours Mathematics
           and specializing in Computational Mathematics. I do web dev stuff and I'd
           love to do game dev in the future. I also made this website myself.
+        </p>
+        <p className='text-justify text-md mb-2 font-normal'>
           よろしくお願いします。🙇
         </p>
         <br />
