@@ -24,6 +24,12 @@ export default class Navbar extends React.Component<INavbarProps> {
           Works
         </Link>
         <Link 
+          to="stack"
+          className='rounded mr-auto px-2 py-2 hover:bg-slate-700'
+        >
+          Stack
+        </Link>
+        <Link 
           to="contacts"
           className='rounded mr-4 px-2 py-2 hover:bg-slate-700'
         >

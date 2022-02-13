@@ -2,10 +2,10 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import { routeAnim } from '../components/Anims';
 
-export interface IWorksProps {
+export interface IContactsProps {
 }
 
-export default class Works extends React.Component<IWorksProps> {
+export default class Contacts extends React.Component<IContactsProps> {
   public render() {
     return (
       <motion.div 

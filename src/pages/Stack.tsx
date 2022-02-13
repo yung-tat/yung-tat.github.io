@@ -1,11 +1,12 @@
 import * as React from 'react';
+import StackList from '../components/StackList';
 import { motion } from 'framer-motion';
 import { routeAnim } from '../components/Anims';
 
-export interface IWorksProps {
+export interface IStackProps {
 }
 
-export default class Works extends React.Component<IWorksProps> {
+export default class Stack extends React.Component<IStackProps> {
   public render() {
     return (
       <motion.div 
@@ -15,7 +16,8 @@ export default class Works extends React.Component<IWorksProps> {
         variants={routeAnim}
         className='max-w-xl m-auto centered text-gray-200 font-semibold pb-40'
       >
-        
+        <h1 className='text-2xl underline underline-offset-4 mb-2'>My Stack</h1>
+        <StackList />
       </motion.div>
     );
   }
