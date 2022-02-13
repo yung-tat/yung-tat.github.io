@@ -14,7 +14,7 @@ export default class Works extends React.Component<IWorksProps> {
         animate='in'
         exit='out'
         variants={routeAnim}
-        className='max-w-xl m-auto centered text-gray-200 font-semibold pb-40'
+        className='max-w-xl m-auto centered text-gray-200 font-semibold pb-32 px-4 sm:px-0'
       >
         <h1 className='text-2xl underline underline-offset-4 mb-4'>Works</h1>
         <div className='grid grid-cols-2 gap-4'>

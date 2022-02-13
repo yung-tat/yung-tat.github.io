@@ -15,7 +15,7 @@ export default class Contacts extends React.Component<IContactsProps> {
         animate='in'
         exit='out'
         variants={routeAnim}
-        className='max-w-xl m-auto centered text-gray-200 pb-40'
+        className='max-w-xl m-auto centered text-gray-200 pb-32 px-4 sm:px-0'
       >
         <h1 className='text-3xl'>You can reach me on:</h1>
         <ul className='text-semibold text-2xl ml-4'>
