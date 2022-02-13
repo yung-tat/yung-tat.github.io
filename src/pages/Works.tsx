@@ -15,7 +15,7 @@ export default class Works extends React.Component<IWorksProps> {
         variants={routeAnim}
         className='max-w-xl m-auto centered text-gray-200 font-semibold pb-40'
       >
-        
+        Sorry, still working on this one... this website is one of my works tho
       </motion.div>
     );
   }

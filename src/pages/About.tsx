@@ -35,6 +35,7 @@ export default class About extends React.Component<IAboutProps> {
               href="https://open.spotify.com/playlist/58kAOJxF8zbY7u7Y8DM3h2?si=3932e55f695f46e5"
               className='text-light text-xs text-gray-600 ml-2'
               target="_blank"
+              rel="noreferrer"
             >
               Spotify Playlist
               </a>

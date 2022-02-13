@@ -3,9 +3,9 @@ import StackDropDown from './StackDropDown';
 import StackContainer from './StackContainer';
 import StackIcon from "./StackIcon"
 import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaDocker, FaAws, FaLinux, FaJava, FaPython, FaUnity } from "react-icons/fa";
-import { SiRedux, SiTailwindcss, SiDjango, SiNestjs, SiRabbitmq, SiPostgresql, SiJira, SiAsana, SiMacos, SiTypescript, SiJavascript, SiCplusplus, SiC, SiRacket, SiUnity } from "react-icons/si"
+import { SiRedux, SiTailwindcss, SiDjango, SiNestjs, SiRabbitmq, SiPostgresql, SiJira, SiAsana, SiMacos, SiTypescript, SiJavascript, SiCplusplus, SiC, SiRacket } from "react-icons/si"
 import { BsBootstrapFill, BsSlack, BsTerminal, BsWindows } from "react-icons/bs";
-import { DiSqllite, DiGitBranch, DiJavascript1 } from "react-icons/di"
+import { DiSqllite, DiGitBranch } from "react-icons/di"
 
 export interface IStackListProps {
 }
