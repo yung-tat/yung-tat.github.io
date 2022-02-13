@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BiChevronDown } from "react-icons/bi"
 import StackDropDown from './StackDropDown';
 
 export interface IStackListProps {
