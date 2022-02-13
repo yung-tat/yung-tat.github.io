@@ -1,0 +1,37 @@
+import * as React from 'react';
+
+export interface ITimelineProps {
+}
+
+export default class Timeline extends React.Component<ITimelineProps> {
+  public render() {
+    return (
+      <ol className="relative border-l border-white ml-4 my-4">                  
+        <li className="mb-10 ml-4">
+          <div className="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-white"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2002</time>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Born in St. Catherines 🇨🇦</h3>
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Ya boy pulled up.</p>
+        </li>
+        <li className="mb-10 ml-4">
+          <div className="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-white"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2020</time>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Began studying at the University of Waterloo</h3>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">Life got harder...</p>
+        </li>
+        <li className="mb-10 ml-4">
+          <div className="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-white"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April - August 2021</time>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Internship at Timbles</h3>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">Started by web dev journey at an ed-tech startup called "Timbles".</p>
+        </li>
+        <li className="mb-4 ml-4">
+          <div className="absolute w-3 h-3 bg-white rounded-full -left-1.5 border border-white"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">January 2022 - Present</time>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Internship at SkyViewSuites</h3>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">My first official co-op as a Web Developer at furnished rental agency based in Toronto.</p>
+        </li>
+      </ol>
+    );
+  }
+}
