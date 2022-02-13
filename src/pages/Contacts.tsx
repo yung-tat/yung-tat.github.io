@@ -38,7 +38,7 @@ export default class Contacts extends React.Component<IContactsProps> {
             </a>
           </li>
           <li className='my-4'>
-            <a href="https://github.com/yung-tat" target="_blank" className='flex items-center text-xl'>
+            <a href="https://github.com/yung-tat" target="_blank" rel="noreferrer" className='flex items-center text-xl'>
               <BsGithub className='mr-4'/>
               GitHub
             </a>
