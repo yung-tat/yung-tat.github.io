@@ -36,7 +36,7 @@ export default class Works extends React.Component<IWorksProps> {
           <WorkItem 
             name="Chess" 
             href="" 
-            desc="Created a chess game in C++ for a uni course. With AI opponents and everything! But I can't give you the link cause I'm not allowed to."
+            desc="Created a chess game in C++ for a uni course. With AI opponents and everything! But I can't give you the link because of University policies."
           />
         </div>
       </motion.div>
