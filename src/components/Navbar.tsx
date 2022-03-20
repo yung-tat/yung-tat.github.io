@@ -44,13 +44,19 @@ export default class Navbar extends React.Component<INavbarProps, state> {
           </Link>
           <Link 
             to="stack"
-            className='rounded mr-auto px-2 py-2 hover:bg-slate-700'
+            className='rounded mr-4 px-2 py-2 hover:bg-slate-700'
           >
             Stack
           </Link>
           <Link 
+            to="resume"
+            className='rounded mr-auto px-2 py-2 hover:bg-slate-700'
+          >
+            Resume
+          </Link>
+          <Link 
             to="contacts"
-            className='rounded mr-4 px-2 py-2 hover:bg-slate-700'
+            className='rounded px-2 py-2 hover:bg-slate-700'
           >
             Contacts
           </Link>
@@ -94,6 +100,13 @@ export default class Navbar extends React.Component<INavbarProps, state> {
               className='rounded w-auto px-2 py-2 hover:bg-slate-700 border-b border-slate-800'
             >
               Stack
+            </Link>
+            <Link 
+              onClick={ this.toggle }
+              to="resume"
+              className='rounded w-auto px-2 py-2 hover:bg-slate-700 border-b border-slate-800'
+            >
+              Resume
             </Link>
             <Link 
               onClick={ this.toggle }

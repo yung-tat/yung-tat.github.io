@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Works from "./pages/Works";
 import About from "./pages/About";
 import Stack from "./pages/Stack";
+import Resume from "./pages/Resume";
 import Contacts from "./pages/Contacts";
 import { AnimatePresence } from 'framer-motion';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="works" element={<Works />}/>
           <Route path="stack" element={<Stack />}/>
           <Route path="contacts" element={<Contacts />}/>
+          <Route path="resume" element={<Resume />}/>
         </Routes>
       </AnimatePresence>
     </div>
