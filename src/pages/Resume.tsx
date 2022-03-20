@@ -45,7 +45,8 @@ export default class Resume extends React.Component<IResumeProps> {
 
     const resumeBody = (
       <div
-        className='mb-16 page'
+        className='mb-16'
+        style={pageStyle}
       >
         <div 
           className='py-10 flex flex-col items-center gap-2'
