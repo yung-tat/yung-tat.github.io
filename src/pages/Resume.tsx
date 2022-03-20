@@ -27,11 +27,6 @@ export default class Resume extends React.Component<IResumeProps> {
       color: "#30343f"
     }
 
-    const hlBg = {
-      backgroundColor: "#e4d9ff",
-      color: "#30343f"
-    }
-
     const titleDiv = {
       borderBottom: "2px solid #30343f",
       fontWeight: 700,
@@ -48,12 +43,9 @@ export default class Resume extends React.Component<IResumeProps> {
     const os = ["Windows", "MacOs", "Linux"]
     const languages = ["JavaScript", "TypeScript", "Java", "Python", "C", "C++", "Racket", "Unity", "Bash"]
 
-    return (
+    const resumeBody = (
       <div
-        className='mb-16'
-        style={
-          pageStyle
-        }
+        className='mb-16 page'
       >
         <div 
           className='py-10 flex flex-col items-center gap-2'
@@ -210,5 +202,7 @@ export default class Resume extends React.Component<IResumeProps> {
         </div>
       </div>
     );
+
+    return (resumeBody);
   }
 }
