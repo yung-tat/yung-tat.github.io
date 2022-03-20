@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
+import { AiFillPhone } from 'react-icons/ai';
+import { CgWebsite } from 'react-icons/cg';
 import { BsFillHouseFill } from 'react-icons/bs';
+import { IoMdSchool, IoMdBriefcase, IoMdRocket, IoMdFolder, IoLogoGameControllerA } from 'react-icons/io'
 import { HiMail } from 'react-icons/hi';
 
 export interface IResumeProps {
@@ -25,6 +27,10 @@ export default class Resume extends React.Component<IResumeProps> {
     const lightBg = {
       backgroundColor: "#fafaff",
       color: "#30343f"
+    }
+
+    const icons = {
+      color: "#40c9a2"
     }
 
     const titleDiv = {
@@ -64,8 +70,8 @@ export default class Resume extends React.Component<IResumeProps> {
               <div className='pl-2'>647-466-5557</div>
             </div>
             <div className='flex items-center'>
-              <AiFillLinkedin/>
-              <a href="https://www.linkedin.com/in/issac-liu-890b281b1/" className='pl-2'>LinkedIn</a>
+              <CgWebsite/>
+              <div className='pl-2'>yung-tat.github.io</div>
             </div>
             <div className='flex items-center'>
               <BsFillHouseFill/>
@@ -79,7 +85,8 @@ export default class Resume extends React.Component<IResumeProps> {
         >
           <div className="w-full col-span-3">
             {/* Education */}
-            <div className="text-xl" style={titleDiv}>
+            <div className="text-xl flex items-center gap-2" style={titleDiv}>
+              <IoMdSchool style={icons}/>
               Education
             </div>
             <div>
@@ -94,7 +101,8 @@ export default class Resume extends React.Component<IResumeProps> {
               </ul>
             </div>
             {/* Work Experience */}
-            <div className="text-xl mt-2"  style={titleDiv}>
+            <div className="text-xl mt-2 flex items-center gap-2"  style={titleDiv}>
+                <IoMdBriefcase style={icons}/>
                 Work Experience
             </div>
             <div className='pb-2 mb-2' style={separate}>
@@ -121,7 +129,8 @@ export default class Resume extends React.Component<IResumeProps> {
               </ul>
             </div>
             {/* Technical Skills */}
-            <div className="text-xl mt-2"  style={titleDiv}>
+            <div className="text-xl mt-2 flex items-center gap-2"  style={titleDiv}>
+                <IoMdRocket style={icons}/>
                 Technical Skills
             </div>
             <div>
@@ -165,7 +174,8 @@ export default class Resume extends React.Component<IResumeProps> {
           </div>
           <div className='w-full rounded col-span-2'>
             {/* Projects */}
-            <div className="text-xl"  style={titleDiv}>
+            <div className="text-xl flex items-center gap-2"  style={titleDiv}>
+              <IoMdFolder style={icons}/>
               Projects
             </div>
             <div className='pb-2 mb-2' style={separate}>
@@ -182,15 +192,23 @@ export default class Resume extends React.Component<IResumeProps> {
                 <li className='text-sm'>Bypassed YouTube's costly API to check a channel's live status using web scraping in Python</li>
               </ul>
             </div>
-            <div>
+            <div className='pb-2 mb-2' style={separate}>
               <div className='text-lg pr-1'>Various Game Mechanic Demos</div>
               <ul className='list-outside list-disc px-4'>
                 <li className='text-sm'>Snake Game written in JavaScript</li>
                 <li className='text-sm'>Source Engine-esque object pick up system and 2D roguelike shooting and movement created in Unity</li>
               </ul>
             </div>
+            <div>
+              <div className='text-lg pr-1'>Portfolio Page</div>
+              <ul className='list-outside list-disc px-4'>
+                <li className='text-sm'>Created a portfolio website with ReactJS</li>
+                <li className='text-sm'>Utilized TailwindCSS and deployed on GitHub Pages</li>
+              </ul>
+            </div>
             {/* Interests */}
-            <div className="text-xl mt-2"  style={titleDiv}>
+            <div className="text-xl mt-2 flex items-center gap-2"  style={titleDiv}>
+              <IoLogoGameControllerA style={icons}/>
               Interests
             </div>
             <ul className='list-outside list-disc px-4'>
