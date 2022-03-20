@@ -2,7 +2,6 @@ import * as React from 'react';
 import { AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
 import { BsFillHouseFill } from 'react-icons/bs';
 import { HiMail } from 'react-icons/hi';
-import { MdPiano, MdSportsSoccer, MdOutlineKeyboard } from 'react-icons/md'
 
 export interface IResumeProps {
 }
@@ -73,7 +72,7 @@ export default class Resume extends React.Component<IResumeProps> {
             </div>
             <div className='flex items-center'>
               <AiFillLinkedin/>
-              <a href="" className='pl-2'>LinkedIn</a>
+              <a href="https://www.linkedin.com/in/issac-liu-890b281b1/" className='pl-2'>LinkedIn</a>
             </div>
             <div className='flex items-center'>
               <BsFillHouseFill/>
