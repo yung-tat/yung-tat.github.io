@@ -8,6 +8,14 @@ export interface IResumeProps {
 
 export default class Resume extends React.Component<IResumeProps> {
   public render() {
+    
+    const pageStyle: any = {
+      width: "21cm",
+      height: "29.7cm",
+
+      background: "#fafaff",
+      boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)"
+    };
 
     const darkBg = {
       backgroundColor: "#30343f",
