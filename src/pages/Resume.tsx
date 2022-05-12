@@ -14,9 +14,7 @@ export default class Resume extends React.Component<IResumeProps> {
     const pageStyle: any = {
       width: "21cm",
       height: "29.7cm",
-
       background: "#fafaff",
-      boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)"
     };
 
     const darkBg = {
@@ -47,7 +45,16 @@ export default class Resume extends React.Component<IResumeProps> {
     const database = ["PostGres SQL", "SQLite"]
     const devops = ["Git", "GitHub", "Docker", "AWS", "Jira", "Asana", "Slack"]
     const os = ["Windows", "MacOs", "Linux"]
-    const languages = ["JavaScript", "TypeScript", "Java", "Python", "C", "C++", "Racket", "Unity", "Bash"]
+    const languages = ["JavaScript", 
+      "TypeScript", 
+      "Java", 
+      "Python", 
+      "C", 
+      "C++", 
+      "Racket", 
+      //"Unity", 
+      "Bash"
+    ]
 
     const resumeBody = (
       <div
@@ -84,24 +91,8 @@ export default class Resume extends React.Component<IResumeProps> {
           style={lightBg}
         >
           <div className="w-full col-span-3">
-            {/* Education */}
-            <div className="text-xl flex items-center gap-2" style={titleDiv}>
-              <IoMdSchool style={icons}/>
-              Education
-            </div>
-            <div>
-              <div className='flex items-center'>
-                <div className='text-lg pr-1'>University of Waterloo</div>
-                <div className='font-light text-sm'>- Waterloo, On</div>
-              </div>
-              <div className='text-sm pr-1'>Sept 2020 - Present</div>
-              <ul className='list-outside list-disc px-4'>
-                <li className='text-sm'>Candidate for Honours Bachelor of Mathemattics in Computational Mathematics, Co-op</li>
-                <li className='text-sm'>University of Waterloo's Presidents Scholarship Recipient</li>
-              </ul>
-            </div>
             {/* Work Experience */}
-            <div className="text-xl mt-2 flex items-center gap-2"  style={titleDiv}>
+            <div className="text-xl flex items-center gap-2"  style={titleDiv}>
                 <IoMdBriefcase style={icons}/>
                 Work Experience
             </div>
@@ -126,6 +117,22 @@ export default class Resume extends React.Component<IResumeProps> {
                 <li className='text-sm'>Developed, tested, and deployed the React front-end and NestJS microservice APIs of the admin system web app for other SkyViewSuites employees</li>
                 <li className='text-sm'>Collaborated with coworkers in different departments to fully understand and implement their needs</li>
                 <li className='text-sm'>Quickly adapted to an existing codebase and learned new technologies to seamlessly integrate to the dev team</li>
+              </ul>
+            </div>
+            {/* Education */}
+            <div className="text-xl mt-2 flex items-center gap-2" style={titleDiv}>
+              <IoMdSchool style={icons}/>
+              Education
+            </div>
+            <div>
+              <div className='flex items-center'>
+                <div className='text-lg pr-1'>University of Waterloo</div>
+                <div className='font-light text-sm'>- Waterloo, On</div>
+              </div>
+              <div className='text-sm pr-1'>Sept 2020 - Present</div>
+              <ul className='list-outside list-disc px-4'>
+                <li className='text-sm'>Candidate for Honours Bachelor of Mathemattics in Computational Mathematics, Co-op</li>
+                <li className='text-sm'>University of Waterloo's Presidents Scholarship Recipient</li>
               </ul>
             </div>
             {/* Technical Skills */}
@@ -212,9 +219,9 @@ export default class Resume extends React.Component<IResumeProps> {
               Interests
             </div>
             <ul className='list-outside list-disc px-4'>
-              <li>Self-teach Piano</li>
-              <li>Play Soccer, Badminton, and Ping Pong</li>
-              <li>Recreate mechanics from my favorite games in Unity and play around with ReactJS</li>
+              <li>Piano, Baritone, Trumpet, and Trombone</li>
+              <li>Soccer, Badminton, and Ping Pong</li>
+              <li>Play around with ReactJS and Unity</li>
               <li>Learn Japanese</li>
             </ul>
           </div>
