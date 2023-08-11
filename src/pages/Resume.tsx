@@ -53,10 +53,17 @@ export default class Resume extends React.Component<IResumeProps> {
       "BootStrap",
       "Material UI",
     ];
-    const backend = ["Django", "NestJs", "RabbitMQ"];
-    const database = ["PostGres SQL", "SQLite"];
+    const backend = ["Django", "NestJs", "Flask", "RabbitMQ"];
+    const database = [
+      "SQL",
+      "Numpy",
+      "Pandas",
+      "MatPlotLib",
+      "TensorFlow",
+      // "BeautifulSoup",
+    ];
     const devops = ["Git", "GitHub", "Docker", "AWS", "Jira", "Asana", "Slack"];
-    const os = ["Windows", "MacOs", "Linux"];
+    // const os = ["Windows", "MacOs", "Linux"];
     const languages = [
       "JavaScript",
       "TypeScript",
@@ -65,7 +72,6 @@ export default class Resume extends React.Component<IResumeProps> {
       "C",
       "C++",
       "Racket",
-      //"Unity",
       "Bash",
     ];
 
@@ -109,7 +115,7 @@ export default class Resume extends React.Component<IResumeProps> {
               <ul className="list-outside list-disc px-4">
                 <li className="text-sm">
                   Worked with the product team to implement new features and fix
-                  bugs for a ReactJS crypto web app
+                  bugs for a ReactJS market making web app
                 </li>
                 <li className="text-sm">
                   Created unit tests with Jest and E2E tests with Cypress for
@@ -240,7 +246,7 @@ export default class Resume extends React.Component<IResumeProps> {
                   </div>
                 ))}
               </div>
-              <div>Database</div>
+              <div>Data</div>
               <div className="flex flex-wrap gap-1">
                 {database.map((item: string) => (
                   <div className="bg-gray-200 rounded-full py-0.5 px-2 text-xs">
@@ -248,7 +254,7 @@ export default class Resume extends React.Component<IResumeProps> {
                   </div>
                 ))}
               </div>
-              <div>Dev Ops</div>
+              <div>Tools</div>
               <div className="flex flex-wrap gap-1">
                 {devops.map((item: string) => (
                   <div className="bg-gray-200 rounded-full py-0.5 px-2 text-xs">
@@ -256,14 +262,14 @@ export default class Resume extends React.Component<IResumeProps> {
                   </div>
                 ))}
               </div>
-              <div>Operating Systems</div>
+              {/* <div>Operating Systems</div>
               <div className="flex flex-wrap gap-1">
                 {os.map((item: string) => (
                   <div className="bg-gray-200 rounded-full py-0.5 px-2 text-xs">
                     {item}
                   </div>
                 ))}
-              </div>
+              </div> */}
               <div>Languages</div>
               <div className="flex flex-wrap gap-1">
                 {languages.map((item: string) => (
