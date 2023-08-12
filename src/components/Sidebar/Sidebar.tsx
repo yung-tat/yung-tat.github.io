@@ -1,9 +1,28 @@
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import {
+  Create,
+  GitHub,
+  Home,
+  Interests,
+  LinkedIn,
+  RateReview,
+  WorkHistory,
+} from "@mui/icons-material";
 import { Box, Divider, MenuItem, Typography } from "@mui/material";
+import { useLocation, useNavigate } from "react-router-dom";
+import { INavLink } from "../../types/common";
 
-const navlinks = ["Main", "Experiences", "Projects", "Interests", "Reviews"];
+// const navlinks = ["Main", "Experiences", "Projects", "Interests", "Reviews"];
+const navlinks: INavLink[] = [
+  { title: "Main", path: "/", icon: <Home /> },
+  { title: "Experiences", path: "/experiences", icon: <WorkHistory /> },
+  { title: "Projects", path: "/projects", icon: <Create /> },
+  { title: "Interests", path: "/interests", icon: <Interests /> },
+  { title: "Reviews", path: "/reviews", icon: <RateReview /> },
+];
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <Box
       component="nav"
@@ -34,9 +53,22 @@ const Sidebar = () => {
           <Divider />
         </Box>
 
-        {navlinks.map((link) => (
-          <MenuItem sx={{ marginBottom: 2 }} disableGutters>
-            <Typography sx={{ fontSize: "20px" }}>{link}</Typography>
+        {navlinks.map((navlink) => (
+          <MenuItem
+            sx={(theme) => ({
+              marginBottom: 2,
+              color:
+                location.pathname == navlink.path
+                  ? theme.palette.secondary.main
+                  : undefined,
+            })}
+            onClick={() => navigate(navlink.path)}
+            disableGutters
+          >
+            {navlink.icon}
+            <Typography sx={{ fontSize: "20px", marginLeft: 2 }}>
+              {navlink.title}
+            </Typography>
           </MenuItem>
         ))}
         <Box

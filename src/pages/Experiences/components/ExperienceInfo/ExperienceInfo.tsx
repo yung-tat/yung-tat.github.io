@@ -18,7 +18,7 @@ const ExperienceInfo: FC<IExperienceInfo> = ({ experience }) => {
   return (
     <InfoCard>
       <Grid item xs={12}>
-        <Typography>
+        <Typography sx={{ fontSize: "20px" }}>
           <b>Position:</b>
           {" " + experience.position}
         </Typography>
