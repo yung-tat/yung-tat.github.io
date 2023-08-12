@@ -7,22 +7,14 @@ import {
   RateReview,
   WorkHistory,
 } from "@mui/icons-material";
-import { Box, Divider, MenuItem, Typography } from "@mui/material";
+import { Box, Divider, IconButton, MenuItem, Typography } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import { INavLink } from "../../types/common";
-
-// const navlinks = ["Main", "Experiences", "Projects", "Interests", "Reviews"];
-const navlinks: INavLink[] = [
-  { title: "Main", path: "/", icon: <Home /> },
-  { title: "Experiences", path: "/experiences", icon: <WorkHistory /> },
-  { title: "Projects", path: "/projects", icon: <Create /> },
-  { title: "Interests", path: "/interests", icon: <Interests /> },
-  { title: "Reviews", path: "/reviews", icon: <RateReview /> },
-];
+import ContactLinks from "./components/ContactLinks";
+import NavLinks from "./components/NavLinks";
+import SidebarHeader from "./components/SidebarHeader";
 
 const Sidebar = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
   return (
     <Box
       component="nav"
@@ -43,34 +35,8 @@ const Sidebar = () => {
           borderRight: "1px solid rgba(0,0,0,0.15)",
         }}
       >
-        <Box sx={{ marginBottom: 2 }}>
-          <Typography sx={{ fontSize: "36px" }}>Issac Liu</Typography>
-          <Divider />
-          <Typography>Web Developer</Typography>
-          <Typography sx={{ fontSize: "12px" }}>
-            Student in Computational Mathematics
-          </Typography>
-          <Divider />
-        </Box>
-
-        {navlinks.map((navlink) => (
-          <MenuItem
-            sx={(theme) => ({
-              marginBottom: 2,
-              color:
-                location.pathname == navlink.path
-                  ? theme.palette.secondary.main
-                  : undefined,
-            })}
-            onClick={() => navigate(navlink.path)}
-            disableGutters
-          >
-            {navlink.icon}
-            <Typography sx={{ fontSize: "20px", marginLeft: 2 }}>
-              {navlink.title}
-            </Typography>
-          </MenuItem>
-        ))}
+        <SidebarHeader />
+        <NavLinks />
         <Box
           sx={{
             flex: 1,
@@ -78,19 +44,7 @@ const Sidebar = () => {
             flexDirection: "column-reverse",
           }}
         >
-          <Box>
-            <LinkedIn
-              fontSize="large"
-              sx={(theme) => ({
-                color: theme.palette.primary.dark,
-                marginRight: 2,
-              })}
-            />
-            <GitHub
-              fontSize="large"
-              sx={(theme) => ({ color: theme.palette.primary.dark })}
-            />
-          </Box>
+          <ContactLinks />
         </Box>
       </Box>
     </Box>
