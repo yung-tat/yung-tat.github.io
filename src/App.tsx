@@ -1,12 +1,15 @@
 import { ThemeProvider, createTheme } from "@mui/material";
 import theme from "./utils/theme";
 import Layout from "./components/Layout";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Layout />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <Layout />
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
