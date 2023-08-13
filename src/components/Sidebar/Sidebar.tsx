@@ -18,14 +18,13 @@ const Sidebar = () => {
   return (
     <Box
       component="nav"
-      sx={(theme) => ({
+      sx={{
         width: "284px",
         height: "100vh",
-      })}
+      }}
     >
       <Box
         sx={{
-          paddingX: 4,
           position: "fixed",
           display: "flex",
           flexDirection: "column",

@@ -17,6 +17,7 @@ const NavLinks = () => {
     <MenuItem
       sx={(theme) => ({
         marginBottom: 2,
+        paddingX: 4,
         color:
           location.pathname == navlink.path
             ? theme.palette.secondary.main

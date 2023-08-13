@@ -3,7 +3,7 @@ import { Box, IconButton } from "@mui/material";
 
 const ContactLinks = () => {
   return (
-    <Box>
+    <Box sx={{ paddingX: 4 }}>
       <IconButton
         href="https://www.linkedin.com/in/issac-liu-890b281b1/"
         target="_blank"
