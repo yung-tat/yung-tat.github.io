@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import { FC, ReactNode } from "react";
+import { darkBorder } from "../../constants/common";
 
 interface IInfoCard {
   children: ReactNode;
@@ -11,9 +12,9 @@ const InfoCard: FC<IInfoCard> = ({ children }) => {
       container
       sx={{
         padding: 2,
-        backgroundColor: "#FFF",
         borderRadius: 2,
-        border: "1px solid rgba(0,0,0,0.15)",
+        // No border in dark mode
+        // border: "1px solid " + darkBorder,
         marginBottom: 2,
         display: "flex",
       }}

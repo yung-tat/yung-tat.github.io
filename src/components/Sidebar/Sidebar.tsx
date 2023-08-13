@@ -13,6 +13,7 @@ import { INavLink } from "../../types/common";
 import ContactLinks from "./components/ContactLinks";
 import NavLinks from "./components/NavLinks";
 import SidebarHeader from "./components/SidebarHeader";
+import { darkBorder } from "../../constants/common";
 
 const Sidebar = () => {
   return (
@@ -31,7 +32,7 @@ const Sidebar = () => {
           paddingY: 4,
           boxSizing: "border-box",
           height: "100%",
-          borderRight: "1px solid rgba(0,0,0,0.15)",
+          borderRight: "1px solid " + darkBorder,
         }}
       >
         <SidebarHeader />

@@ -12,10 +12,12 @@ import Reviews from "../../pages/Reviews";
 const Layout = () => {
   return (
     <Box
-      sx={{
+      sx={(theme) => ({
         width: "100vw",
         display: "flex",
-      }}
+        color: theme.palette.text.primary,
+        backgroundColor: theme.palette.background.default,
+      })}
     >
       <Sidebar />
       <Box
