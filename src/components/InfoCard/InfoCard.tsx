@@ -11,7 +11,7 @@ const InfoCard: FC<IInfoCard> = ({ children }) => {
     <Grid
       container
       sx={{
-        padding: 2,
+        // padding: 2,
         borderRadius: 2,
         // No border in dark mode
         // border: "1px solid " + darkBorder,

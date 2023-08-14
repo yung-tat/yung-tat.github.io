@@ -7,7 +7,6 @@ import { Route, Router, Routes } from "react-router-dom";
 import Main from "../../pages/Main";
 import Interests from "../../pages/Interests";
 import Projects from "../../pages/Projects";
-import Reviews from "../../pages/Reviews";
 
 const Layout = () => {
   return (
@@ -32,7 +31,6 @@ const Layout = () => {
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/interests" element={<Interests />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/reviews" element={<Reviews />} />
           <Route path="*" element={<>ERRORS</>} />
         </Routes>
       </Box>

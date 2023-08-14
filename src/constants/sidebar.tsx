@@ -12,5 +12,4 @@ export const navlinks: INavLink[] = [
   { title: "Experiences", path: "/experiences", icon: <WorkHistory /> },
   { title: "Projects", path: "/projects", icon: <Create /> },
   { title: "Interests", path: "/interests", icon: <Interests /> },
-  { title: "Reviews", path: "/reviews", icon: <RateReview /> },
 ];

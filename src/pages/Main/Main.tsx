@@ -12,28 +12,19 @@ import {
 } from "@mui/lab";
 import TimelineEntry from "../../components/TimelineEntry";
 import { timelineInfo } from "../../constants/timeline";
+import MyTimeline from "./components/MyTimeline";
 
 const Main = () => {
   return (
     <>
-      <Typography sx={{ fontSize: "24px" }}>About Me:</Typography>
+      <Typography sx={{ fontSize: "36px" }}>About Me:</Typography>
       <Typography sx={{ marginBottom: 2 }}>
         I'm a student at the University of Waterloo majoring in Honours
         Mathematics and specializing in Computational Mathematics. I do web dev
         stuff and I hope to get into game dev in the future.
       </Typography>
-      <Typography sx={{ fontSize: "24px" }}>My Timeline:</Typography>
-      <Timeline
-        sx={{
-          [`& .${timelineOppositeContentClasses.root}`]: {
-            flex: 0.15,
-          },
-        }}
-      >
-        {timelineInfo.map((info) => (
-          <TimelineEntry {...info} />
-        ))}
-      </Timeline>
+      <Typography sx={{ fontSize: "36px" }}>My Timeline:</Typography>
+      <MyTimeline />
     </>
   );
 };

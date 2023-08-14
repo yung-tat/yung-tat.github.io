@@ -12,14 +12,14 @@ const ContactLinks = () => {
         <LinkedIn
           fontSize="large"
           sx={(theme) => ({
-            color: theme.palette.primary.dark,
+            color: theme.palette.text.primary,
           })}
         />
       </IconButton>
       <IconButton href="https://github.com/yung-tat" target="_blank">
         <GitHub
           fontSize="large"
-          sx={(theme) => ({ color: theme.palette.primary.dark })}
+          sx={(theme) => ({ color: theme.palette.text.primary })}
         />
       </IconButton>
     </Box>
