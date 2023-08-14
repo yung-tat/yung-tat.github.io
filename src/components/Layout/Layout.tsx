@@ -7,6 +7,7 @@ import { Route, Router, Routes } from "react-router-dom";
 import Main from "../../pages/Main";
 import Interests from "../../pages/Interests";
 import Projects from "../../pages/Projects";
+import { blurEffect } from "../../constants/common";
 
 const Layout = () => {
   return (
@@ -24,6 +25,7 @@ const Layout = () => {
           flex: 1,
           padding: 4,
           backgroundColor: theme.palette.primary.main,
+          filter: blurEffect,
         })}
       >
         <Routes>

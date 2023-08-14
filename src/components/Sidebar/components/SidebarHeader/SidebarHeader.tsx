@@ -7,7 +7,10 @@ const SidebarHeader = () => {
       <Divider sx={{ marginY: 1 }} />
       <Typography>Web Developer</Typography>
       <Typography sx={{ fontSize: "12px" }}>
-        Student in Computational Mathematics
+        Student in at University of Waterloo
+      </Typography>
+      <Typography sx={{ fontSize: "12px" }}>
+        Computational Mathematics, BMath
       </Typography>
       <Divider sx={{ marginY: 1 }} />
     </Box>

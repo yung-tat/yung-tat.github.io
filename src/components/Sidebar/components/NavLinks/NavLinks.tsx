@@ -22,6 +22,10 @@ const NavLinks = () => {
           location.pathname == navlink.path
             ? theme.palette.secondary.main
             : undefined,
+        transition: theme.transitions.create(["background-color", "color"], {
+          easing: theme.transitions.easing.easeInOut,
+          duration: theme.transitions.duration.standard,
+        }),
       })}
       onClick={() => navigate(navlink.path)}
       disableGutters
