@@ -1,4 +1,4 @@
-import { StackStyles } from "../pages/Main/Main";
+import { StackStyles } from "../types/main";
 
 export const getChipStyle = (
   color: StackStyles
