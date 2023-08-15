@@ -1,5 +1,7 @@
 import {
   Box,
+  Chip,
+  Divider,
   Grid,
   List,
   ListItem,
@@ -17,33 +19,30 @@ interface IExperienceInfo {
 const ExperienceInfo: FC<IExperienceInfo> = ({ experience }) => {
   return (
     <InfoCard>
-      <Grid item xs={12}>
-        <Typography sx={{ fontSize: "20px" }}>
-          <b>Position:</b>
-          {" " + experience.position}
-        </Typography>
-      </Grid>
-      <Grid item xs={12} md={6} lg={4}>
-        <Typography>
-          <b>Company:</b> {" " + experience.company}
-        </Typography>
-      </Grid>
-      <Grid item xs={12} md={6} lg={8}>
-        <Typography>
-          <b>Dates Employed:</b> {" " + experience.datesEmployed}
-        </Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Typography fontWeight="bold">Description: </Typography>
-        {experience.description.map((point) => (
-          <Typography>-{" " + point}</Typography>
+      <Typography
+        width="100%"
+        sx={{ fontSize: "20px", borderBottom: "1px solid", marginBottom: 1 }}
+      >
+        {experience.position + " - " + experience.company}
+      </Typography>
+      {experience.description.map((point) => (
+        <Typography sx={{ fontSize: 16 }}>-{" " + point}</Typography>
+      ))}
+      <Box width="100%" my={1}>
+        {experience.stack.map((item) => (
+          <Chip
+            color="success"
+            variant="outlined"
+            label={item}
+            size="small"
+            sx={{ mr: 1 }}
+          />
         ))}
-      </Grid>
-      <Grid item xs={12}>
-        <Typography>
-          <b>Tech I Worked With:</b> {" " + experience.stack.join(", ")}
-        </Typography>
-      </Grid>
+      </Box>
+      <Divider />
+      <Typography sx={{ fontSize: 12 }}>
+        {" " + experience.datesEmployed}
+      </Typography>
     </InfoCard>
   );
 };

@@ -9,9 +9,8 @@ const experienceList: IExperience[] = [
     datesEmployed: "Sept-Dec 22, Apr-Aug 23",
     stack: ["React", "Redux", "React-Query", "MUI", "Elixir"],
     description: [
-      "Responsible for implementing various UI features and maintaining the front-end of a crypto-related React app",
-      "Improved site performance by eliminating unnecessary rerenders",
-      "Worked frequently with product and backend to deliver new features",
+      "Implemented various UI features and maintained the front-end of a crypto-related React app",
+      "Added a dashboard feature, revamped navigation, and improved site performance by eliminating unnecessary rerenders",
       "Where I learned code practices to build a clean, maintainable front-end application as well as an understanding of the Accessibility and testing",
     ],
   },
@@ -26,7 +25,7 @@ const experienceList: IExperience[] = [
     ],
   },
   {
-    position: "Front-end Web Developer Intern",
+    position: "Front-End Web Developer Intern",
     company: "Timbles Inc",
     datesEmployed: "Apr-Aug 21",
     stack: ["React", "Redux", "Django"],
@@ -38,16 +37,9 @@ const experienceList: IExperience[] = [
 ];
 
 const Experiences = () => {
-  return (
-    <TitledContent
-      title={"Experiences"}
-      subtext={"A list of my internship / co-op positions."}
-    >
-      {experienceList.map((experience) => (
-        <ExperienceInfo experience={experience} />
-      ))}
-    </TitledContent>
-  );
+  return experienceList.map((experience) => (
+    <ExperienceInfo experience={experience} />
+  ));
 };
 
 export default Experiences;

@@ -8,8 +8,6 @@ import {
   WorkHistory,
 } from "@mui/icons-material";
 import { Box, Divider, IconButton, MenuItem, Typography } from "@mui/material";
-import { useLocation, useNavigate } from "react-router-dom";
-import { INavLink } from "../../types/common";
 import ContactLinks from "./components/ContactLinks";
 import NavLinks from "./components/NavLinks";
 import SidebarHeader from "./components/SidebarHeader";
@@ -20,7 +18,7 @@ const Sidebar = () => {
     <Box
       component="nav"
       sx={{
-        width: "284px",
+        width: "40vw",
         height: "100vh",
       }}
     >
@@ -29,10 +27,11 @@ const Sidebar = () => {
           position: "fixed",
           display: "flex",
           flexDirection: "column",
-          paddingY: 4,
+          paddingY: 12,
+          marginLeft: 24,
           boxSizing: "border-box",
           height: "100%",
-          borderRight: "1px solid " + darkBorder,
+          // borderRight: "1px solid " + darkBorder,
           filter: blurEffect,
         }}
       >

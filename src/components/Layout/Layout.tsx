@@ -1,13 +1,10 @@
-import { Box, Card, Divider, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Sidebar from "../Sidebar";
-import InfoCard from "../InfoCard";
-import TitledContent from "../TitledContent";
-import Experiences from "../../pages/Experiences";
-import { Route, Router, Routes } from "react-router-dom";
 import Main from "../../pages/Main";
-import Interests from "../../pages/Interests";
-import Projects from "../../pages/Projects";
 import { blurEffect } from "../../constants/common";
+import { Route, Router, Routes } from "react-router-dom";
+import Experiences from "../../pages/Experiences";
+import Projects from "../../pages/Projects";
 
 const Layout = () => {
   return (
@@ -23,7 +20,9 @@ const Layout = () => {
       <Box
         sx={(theme) => ({
           flex: 1,
-          padding: 4,
+          paddingY: 12,
+          paddingRight: 24,
+          paddingLeft: 8,
           backgroundColor: theme.palette.primary.main,
           filter: blurEffect,
         })}
@@ -31,9 +30,8 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/experiences" element={<Experiences />} />
-          <Route path="/interests" element={<Interests />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="*" element={<>ERRORS</>} />
+          <Route path="*" element={<>404 Homie.</>} />
         </Routes>
       </Box>
     </Box>

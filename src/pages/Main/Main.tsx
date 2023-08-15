@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import TitledContent from "../../components/TitledContent";
 import {
   Timeline,
@@ -17,28 +17,18 @@ import { hobbies, movies, shows } from "../../constants/interests";
 
 const Main = () => {
   return (
-    <TitledContent title="About Me:" subtext="">
+    <>
+      <Typography sx={{ marginBottom: 2 }} id="about-me">
+        Like most people my age, I grew up playing Minecraft. I loved the game
+        and I soon started looking into modding which introduced me to the world
+        of programming at 9.
+      </Typography>
       <Typography sx={{ marginBottom: 2 }}>
-        I'm a student at the University of Waterloo majoring in Honours
-        Mathematics and specializing in Computational Mathematics. I do web dev
-        stuff and I hope to get into game dev in the future.
+        I currently study at the University of Waterloo majoring in Honours
+        Mathematics and specializing in Computational Mathematics. I mainly do
+        web development and would love to break into the game industry as well.
       </Typography>
-      <Typography sx={{ fontSize: "36px" }}>My Timeline:</Typography>
-      <MyTimeline />
-      <Typography sx={{ fontSize: "36px" }}>Interests:</Typography>
-      <Typography>
-        <b>Movies: </b>
-        {movies.join(" / ")}
-      </Typography>
-      <Typography>
-        <b>Shows: </b>
-        {shows.join(" / ")}
-      </Typography>
-      <Typography>
-        <b>Hobbies: </b>
-        {hobbies.join(" / ")}
-      </Typography>
-    </TitledContent>
+    </>
   );
 };
 
