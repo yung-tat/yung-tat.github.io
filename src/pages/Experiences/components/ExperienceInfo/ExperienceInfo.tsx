@@ -11,6 +11,7 @@ import {
 import { IExperience } from "../../../../types/experience";
 import { FC } from "react";
 import InfoCard from "../../../../components/InfoCard";
+import { darkBorder } from "../../../../constants/common";
 
 interface IExperienceInfo {
   experience: IExperience;
@@ -21,7 +22,11 @@ const ExperienceInfo: FC<IExperienceInfo> = ({ experience }) => {
     <InfoCard>
       <Typography
         width="100%"
-        sx={{ fontSize: "20px", borderBottom: "1px solid", marginBottom: 1 }}
+        sx={{
+          fontSize: "20px",
+          borderBottom: "1px solid " + darkBorder,
+          marginBottom: 1,
+        }}
       >
         {experience.position + " - " + experience.company}
       </Typography>
