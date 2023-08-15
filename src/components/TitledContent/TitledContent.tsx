@@ -11,12 +11,11 @@ const TitledContent: FC<ITitledContent> = ({ title, subtext, children }) => {
   return (
     <>
       <Box>
-        <Typography sx={{ fontSize: "52px", lineHeight: 1, marginBottom: 1 }}>
+        <Typography sx={{ fontSize: "36px", marginBottom: 1 }}>
           {title}
         </Typography>
         <Typography>{subtext}</Typography>
       </Box>
-      <Divider sx={{ marginY: 2 }} />
       {children}
     </>
   );

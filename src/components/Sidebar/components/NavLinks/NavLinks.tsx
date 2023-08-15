@@ -16,6 +16,8 @@ const NavLinks = () => {
   return navlinks.map((navlink) => (
     <MenuItem
       sx={(theme) => ({
+        display: "flex",
+        alignContent: "center",
         marginBottom: 2,
         paddingX: 4,
         color:
@@ -31,7 +33,7 @@ const NavLinks = () => {
       disableGutters
     >
       {navlink.icon}
-      <Typography sx={{ fontSize: "20px", marginLeft: 2 }}>
+      <Typography sx={{ fontSize: "20px", marginLeft: 2, lineHeight: 1 }}>
         {navlink.title}
       </Typography>
     </MenuItem>

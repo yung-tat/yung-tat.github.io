@@ -7,7 +7,7 @@ const ContactLinks = () => {
       <IconButton
         href="https://www.linkedin.com/in/issac-liu-890b281b1/"
         target="_blank"
-        sx={{ marginRight: 2 }}
+        sx={{ marginRight: 1 }}
       >
         <LinkedIn
           fontSize="large"

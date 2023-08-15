@@ -1,13 +1,6 @@
+import { Box, Grid, Typography } from "@mui/material";
+import InfoCard from "../../components/InfoCard";
 import TitledContent from "../../components/TitledContent";
-
-/**
- * Favorites:
- * Animated Movie: Your Name
- * Real People Movie: La La Land
- * Shows: Neon Genesis Evangelion
- * Albums: MBDTF
- * Games: Minecraft, Rocket League
- */
 
 const Interests = () => {
   return (
@@ -15,7 +8,10 @@ const Interests = () => {
       title="Interests"
       subtext="Things I like to spend my time on"
     >
-      tests
+      <InfoCard>
+        <Typography>CATEGORY</Typography>
+        <img src="" style={{ height: "250px" }} />
+      </InfoCard>
     </TitledContent>
   );
 };
