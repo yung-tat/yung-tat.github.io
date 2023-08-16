@@ -11,20 +11,22 @@ const MyStack = () => (
     >
       My Stack
     </Typography>
-    {myStack.map((stack) => (
-      <Box mb={1}>
-        <Typography>{stack.name}:</Typography>
-        {stack.items.map((item) => (
-          <Chip
-            size="small"
-            variant="outlined"
-            sx={{ mr: 1 }}
-            label={item.name}
-            {...getChipStyle(item.color)}
-          />
-        ))}
-      </Box>
-    ))}
+    <Box sx={{ display: "flex", flexDirection: "column" }}>
+      {myStack.map((stack) => (
+        <Box mb={1}>
+          <Typography>{stack.name}:</Typography>
+          {stack.items.map((item) => (
+            <Chip
+              size="small"
+              variant="outlined"
+              sx={{ mr: 1 }}
+              label={item.name}
+              {...getChipStyle(item.color)}
+            />
+          ))}
+        </Box>
+      ))}
+    </Box>
   </InfoCard>
 );
 
