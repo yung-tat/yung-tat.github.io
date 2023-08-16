@@ -36,12 +36,18 @@ const experienceList: IExperience[] = [
 ];
 
 const Experiences = () => {
-  return experienceList.map((experience) => (
-    <ExperienceInfo
-      key={experience.position + experience.company + experience.datesEmployed}
-      experience={experience}
-    />
-  ));
+  return (
+    <>
+      {experienceList.map((experience) => (
+        <ExperienceInfo
+          key={
+            experience.position + experience.company + experience.datesEmployed
+          }
+          experience={experience}
+        />
+      ))}
+    </>
+  );
 };
 
 export default Experiences;
