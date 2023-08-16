@@ -9,8 +9,13 @@ import { INavLink } from "../../../../types/common";
 import { MenuItem, Typography } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import { navlinks } from "../../../../constants/sidebar";
+import { FC } from "react";
 
-const NavLinks = () => {
+interface INavLinks {
+  disableMargin?: boolean;
+}
+
+const NavLinks: FC<INavLinks> = ({ disableMargin = false }) => {
   const navigate = useNavigate();
   const location = useLocation();
   return navlinks.map((navlink) => (
@@ -18,7 +23,7 @@ const NavLinks = () => {
       sx={(theme) => ({
         display: "flex",
         alignContent: "center",
-        marginBottom: 2,
+        marginBottom: disableMargin ? 0 : 2,
         paddingX: 4,
         color:
           location.pathname == navlink.path
