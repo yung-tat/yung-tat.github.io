@@ -27,40 +27,13 @@ import { FC, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { navlinks } from "../../constants/sidebar";
 import useScreenSize from "../../hooks/useScreenSize";
+import Navbar from "../Navbar";
 
 const Sidebar = () => {
   const screenSize = useScreenSize();
-  const location = useLocation();
-  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
   return screenSize == "small" ? (
-    <>
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          height: "64px",
-          justifyContent: "space-between",
-          borderBottom: "1px solid " + darkBorder,
-        }}
-      >
-        <Typography sx={{ ml: 4, fontSize: "20px" }}>
-          {navlinks.find((page) => page.path == location.pathname)?.title}
-        </Typography>
-        <IconButton
-          sx={{ mr: 2, borderRadius: 2 }}
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          <ArrowDropDown />
-        </IconButton>
-      </Box>
-      <Collapse
-        in={isExpanded}
-        sx={{ borderBottom: "1px solid " + darkBorder }}
-      >
-        <NavLinks disableMargin />
-      </Collapse>
-    </>
+    <Navbar />
   ) : (
     <Box
       component="nav"
