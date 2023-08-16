@@ -1,8 +1,8 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 import Sidebar from "../Sidebar";
 import Main from "../../pages/Main";
 import { blurEffect } from "../../constants/common";
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Experiences from "../../pages/Experiences";
 import Projects from "../../pages/Projects";
 import useScreenSize from "../../hooks/useScreenSize";
@@ -14,7 +14,7 @@ const Layout = () => {
       sx={(theme) => ({
         width: "100vw",
         display: "flex",
-        flexDirection: screenSize == "small" ? "column" : "row",
+        flexDirection: screenSize === "small" ? "column" : "row",
         color: theme.palette.text.primary,
         backgroundColor: theme.palette.background.default,
       })}
@@ -23,11 +23,11 @@ const Layout = () => {
       <Box
         sx={(theme) => ({
           flex: 1,
-          ...(screenSize == "small"
+          ...(screenSize === "small"
             ? { padding: 4 }
             : {
                 paddingY: 12,
-                paddingRight: screenSize == "large" ? 24 : 8,
+                paddingRight: screenSize === "large" ? 24 : 8,
                 paddingLeft: 8,
               }),
           backgroundColor: theme.palette.primary.main,

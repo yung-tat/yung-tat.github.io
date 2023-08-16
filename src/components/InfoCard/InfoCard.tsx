@@ -1,6 +1,5 @@
 import { Grid } from "@mui/material";
 import { FC, ReactNode } from "react";
-import { darkBorder } from "../../constants/common";
 
 interface IInfoCard {
   height?: string;

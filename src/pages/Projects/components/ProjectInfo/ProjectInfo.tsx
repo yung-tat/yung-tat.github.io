@@ -2,7 +2,7 @@ import { Box, IconButton, Typography } from "@mui/material";
 import InfoCard from "../../../../components/InfoCard";
 import { IProject } from "../../../../types/project";
 import { FC } from "react";
-import { ArrowOutward, Link } from "@mui/icons-material";
+import { ArrowOutward } from "@mui/icons-material";
 import { darkBorder } from "../../../../constants/common";
 
 interface IProjectInfo {

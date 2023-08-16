@@ -1,13 +1,4 @@
-import {
-  Box,
-  Chip,
-  Divider,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, Chip, Divider, Typography } from "@mui/material";
 import { IExperience } from "../../../../types/experience";
 import { FC } from "react";
 import InfoCard from "../../../../components/InfoCard";

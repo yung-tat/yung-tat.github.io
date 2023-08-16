@@ -1,11 +1,3 @@
-import {
-  Create,
-  Home,
-  Interests,
-  RateReview,
-  WorkHistory,
-} from "@mui/icons-material";
-import { INavLink } from "../../../../types/common";
 import { MenuItem, Typography } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import { navlinks } from "../../../../constants/sidebar";
@@ -26,7 +18,7 @@ const NavLinks: FC<INavLinks> = ({ disableMargin = false }) => {
         marginBottom: disableMargin ? 0 : 2,
         paddingX: 4,
         color:
-          location.pathname == navlink.path
+          location.pathname === navlink.path
             ? theme.palette.secondary.main
             : undefined,
         transition: theme.transitions.create(["background-color", "color"], {

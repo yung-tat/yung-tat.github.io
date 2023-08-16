@@ -1,38 +1,15 @@
-import {
-  ArrowDownward,
-  ArrowDropDown,
-  ArrowLeft,
-  ArrowRight,
-  Create,
-  GitHub,
-  Home,
-  Interests,
-  LinkedIn,
-  RateReview,
-  WorkHistory,
-} from "@mui/icons-material";
-import {
-  Box,
-  Collapse,
-  Divider,
-  IconButton,
-  MenuItem,
-  Typography,
-} from "@mui/material";
+import { Box } from "@mui/material";
 import ContactLinks from "./components/ContactLinks";
 import NavLinks from "./components/NavLinks";
 import SidebarHeader from "./components/SidebarHeader";
-import { blurEffect, darkBorder } from "../../constants/common";
-import { FC, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { navlinks } from "../../constants/sidebar";
+import { blurEffect } from "../../constants/common";
 import useScreenSize from "../../hooks/useScreenSize";
 import Navbar from "../Navbar";
 
 const Sidebar = () => {
   const screenSize = useScreenSize();
 
-  return screenSize == "small" ? (
+  return screenSize === "small" ? (
     <Navbar />
   ) : (
     <Box
@@ -48,7 +25,7 @@ const Sidebar = () => {
           display: "flex",
           flexDirection: "column",
           paddingY: 12,
-          marginLeft: screenSize == "large" ? 24 : 8,
+          marginLeft: screenSize === "large" ? 24 : 8,
           boxSizing: "border-box",
           height: "100%",
           zIndex: 100,

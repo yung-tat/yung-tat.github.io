@@ -1,4 +1,3 @@
-import TitledContent from "../../components/TitledContent";
 import { IExperience } from "../../types/experience";
 import ExperienceInfo from "./components/ExperienceInfo";
 

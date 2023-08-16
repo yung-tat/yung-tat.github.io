@@ -1,28 +1,8 @@
-import { Box, Chip, Divider, Typography } from "@mui/material";
-import TitledContent from "../../components/TitledContent";
-import {
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineOppositeContent,
-  TimelineSeparator,
-  timelineOppositeContentClasses,
-} from "@mui/lab";
-import TimelineEntry from "../../components/TimelineEntry";
-import { timelineInfo } from "../../constants/timeline";
-import MyTimeline from "./components/MyTimeline";
-import { hobbies, movies, shows } from "../../constants/interests";
-import InfoCard from "../../components/InfoCard";
-import { getChipStyle } from "../../utils/main";
+import { Box, Divider, Typography } from "@mui/material";
 import AboutMe from "./components/AboutMe";
 import MyStack from "./components/MyStack";
-import useScreenSize from "../../hooks/useScreenSize";
-import SidebarHeader from "../../components/Sidebar/components/SidebarHeader";
 
 const Main = () => {
-  const screenSize = useScreenSize();
   return (
     <>
       <Box mb={4}>

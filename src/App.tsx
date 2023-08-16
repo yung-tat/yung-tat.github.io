@@ -1,7 +1,7 @@
-import { ThemeProvider, createTheme } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import theme from "./utils/theme";
 import Layout from "./components/Layout";
-import { BrowserRouter, HashRouter, RouterProvider } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (

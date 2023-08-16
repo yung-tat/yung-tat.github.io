@@ -22,7 +22,7 @@ const Navbar = () => {
         }}
       >
         <Typography sx={{ ml: 4, fontSize: "20px" }}>
-          {navlinks.find((page) => page.path == location.pathname)?.title}
+          {navlinks.find((page) => page.path === location.pathname)?.title}
         </Typography>
         <IconButton
           sx={{ mr: 2, borderRadius: 2 }}

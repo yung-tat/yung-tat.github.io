@@ -1,4 +1,3 @@
-import TitledContent from "../../components/TitledContent";
 import { projects } from "../../constants/projects";
 import ProjectInfo from "./components/ProjectInfo";
 
