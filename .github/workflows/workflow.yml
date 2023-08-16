@@ -3,7 +3,8 @@ name: "Github Pages Deploy"
 on:
   push:
     branches:
-      - ["main", "v3-rebuild"]
+      - "main"
+      - "v3-rebuild"
 
 jobs:
   build:
