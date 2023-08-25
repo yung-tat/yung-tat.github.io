@@ -1,9 +1,9 @@
-import { Box, IconButton, Typography } from "@mui/material";
-import InfoCard from "../../../../components/InfoCard";
-import { IProject } from "../../../../types/project";
-import { FC } from "react";
 import { ArrowOutward } from "@mui/icons-material";
+import { Box, Chip, IconButton, Typography } from "@mui/material";
+import { FC } from "react";
+import InfoCard from "../../../../components/InfoCard";
 import { darkBorder } from "../../../../constants/common";
+import { IProject } from "../../../../types/project";
 
 interface IProjectInfo {
   project: IProject;
@@ -35,6 +35,17 @@ const ProjectInfo: FC<IProjectInfo> = ({ project }) => (
       )}
     </Box>
     {project.description}
+    <Box width="100%" my={1}>
+      {project.stack.map((item) => (
+        <Chip
+          color="success"
+          variant="outlined"
+          label={item}
+          size="small"
+          sx={{ mr: 1 }}
+        />
+      ))}
+    </Box>
   </InfoCard>
 );
 
