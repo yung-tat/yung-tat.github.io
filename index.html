@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Issac Liu</title>
+  </head>
+  <body>
+    <div id="page-landing" class="blurred">
+      <div class="page-landing-main-2">SOFTWARE</div>
+      <div class="page-landing-main-2">DEVELOPER</div>
+      <div class="page-landing-main-1">ISSAC LIU</div>
+      <div class="page-landing-subtitle-1">PORTFOLIO PAGE:</div>
+      <button class="page-landing-subtitle-2" onclick="handleContinueButton()">
+        CONTINUE HERE
+      </button>
+    </div>
+
+    <div id="page-main-container" class="blurred super-hidden">
+      <div id="page-fade" class="fade-out"></div>
+      <div id="page-main-nav">
+        <button id="button-about-me" class="page-main-menu-item">
+          About Me
+        </button>
+        <button id="button-experiences" class="page-main-menu-item">
+          Stack and Experiences
+        </button>
+        <button id="button-projects" class="page-main-menu-item">
+          Projects
+        </button>
+        <button id="button-interests" class="page-main-menu-item">
+          Interests
+        </button>
+      </div>
+      <div id="page-main-content-container">
+        <div id="page-main-content">
+          <div id="page-main-about-me" class="hidden">
+            <p id="mobile-alert" class="mobile-visible">
+              Please view on a tablet/computer in landscape mode. 🙏
+            </p>
+            <h1>Issac Liu</h1>
+            <div>Software Developer</div>
+            <div>Student at the University of Waterloo</div>
+            <div>Computational Mathematics, BMath</div>
+            <br />
+            <h1>Bio</h1>
+            <p>
+              I'm a developer who's had experience working on full-stack web
+              development and embedded software.
+            </p>
+            <p>
+              I've always been interested in computers and was inspired by
+              Minecraft to learn Java when I was 10 years old.
+            </p>
+            <p>
+              During my first few co-ops, I began with front-end development
+              experiences in the rental and crypto industries.
+            </p>
+            <p>
+              Later on, I was able to gain my full-stack experiences through
+              back-end roles where I worked on embedded software for betting
+              kiosks and services for online sports betting promotions.
+            </p>
+          </div>
+          <div id="page-main-experiences" class="hidden">
+            <h1>Stack</h1>
+            <h2>Front-end</h2>
+            <div class="stack-container">
+              <div class="stack-item">TypeScript</div>
+              <div class="stack-item">React</div>
+              <div class="stack-item">Redux</div>
+              <div class="stack-item">React Query</div>
+              <div class="stack-item">TailwindCSS</div>
+              <div class="stack-item">Material UI</div>
+              <div class="stack-item">Apollo GraphQL</div>
+            </div>
+            <h2>Back-end</h2>
+            <div class="stack-container">
+              <div class="stack-item">Elixir</div>
+              <div class="stack-item">Phoenix and LiveView</div>
+              <div class="stack-item">gRPC</div>
+              <div class="stack-item">GraphQL</div>
+              <div class="stack-item">NestJS</div>
+              <div class="stack-item">SQL</div>
+              <div class="stack-item">Django</div>
+              <div class="stack-item">Flask</div>
+            </div>
+            <h2>Other Languages and Technologies</h2>
+            <div class="stack-container">
+              <div class="stack-item">Java</div>
+              <div class="stack-item">Python</div>
+              <div class="stack-item">C and C++</div>
+              <div class="stack-item">Racket</div>
+            </div>
+            <br />
+            <h1>Experiences</h1>
+            <div class="experience-title">
+              <h2>theScore</h2>
+              <p class="experience-date">Jan - Apr 24, Sept 24 - Apr 25</p>
+            </div>
+            <p class="first-line mobile-hidden">
+              I spent 3 co-op terms (4 months front-end and 8 months back-end)
+              at a Canadian sports media and betting company. At theScore, I
+              worked on the services for our online betting platforms,
+              <strong>theScore Bet</strong> and <strong>ESPN Bet</strong>, as
+              well as our retail betting platforms that can be found at various
+              Penn owned properties.
+            </p>
+            <p class="mobile-hidden">
+              I refined my skills with React while on the front-end and also
+              gained experience in touchscreen UX. On the back-end, I quickly
+              picked up Elixir (with Phoenix and Live View) and contributed to 6
+              different back-end services.
+            </p>
+            <div class="experience-title">
+              <h2>NorthernLabs</h2>
+              <p class="experience-date">Sept - Dec 22, May - Dec 23</p>
+            </div>
+            <p class="first-line mobile-hidden">
+              My second co-op position was at a crypto-based Venture studio
+              company called NorthernLabs. I worked on the front-end of a couple
+              apps we were developing and I learned a lot about proper
+              conventions in React development.
+            </p>
+            <p class="mobile-hidden">
+              Furthermore, I helped initiate a shared component library to reuse
+              between our apps to improve DX.
+            </p>
+            <p class="mobile-hidden">
+              Most importantly, I learned and researched into
+              <strong>optimizing</strong> React applications. I implemented a
+              different querying system that cut down on unnecessary rerenders,
+              <strong>improving performance by 20%</strong>.
+            </p>
+            <div class="experience-title">
+              <h2>SkyViewSuites</h2>
+              <p class="experience-date">Jan - Apr 22</p>
+            </div>
+            <p class="first-line mobile-hidden">
+              This was my first co-op experience, which is where I got the first
+              chance to put my React skills to the test. I worked on the
+              internal system for a Toronto-based rental company which involved
+              managing/creating rentals and storing their data. I also worked on
+              creating forms to send to renters and accepting payments using
+              Stripe.
+            </p>
+            <p class="mobile-hidden">
+              Although I was mainly front-end here, I ended up doing full-stack
+              work on our <strong>NestJS</strong> back-end, as well as setting
+              up our API gateways on <strong>AWS</strong>.
+            </p>
+            <br class="mobile-visible" />
+          </div>
+          <div id="page-main-projects" class="hidden">
+            <h1>Projects</h1>
+            <div class="experience-title">
+              <h2>Discord BE Clone</h2>
+              <a
+                href="https://github.com/yung-tat/chat_app"
+                target="_blank"
+                class="project-link"
+                >Main Repo</a
+              >
+              <a
+                href="https://github.com/yung-tat/chat_app_web"
+                target="_blank"
+                class="project-link"
+                >Front-end</a
+              >
+            </div>
+            <p class="first-line mobile-hidden">
+              After I found out that Discord uses Elixir, I decided to give a
+              shot at trying to create a live chatting service with Phoenix that
+              takes advantage of Elixir's concurrency design principle.
+            </p>
+            <p class="mobile-hidden">
+              The heart of the project was the back-end service that allowed
+              users to sign up for accounts that they can use to create and join
+              chatrooms with. I utilized Elixir's DynamicSupervisors and
+              Registries to host rooms on their own processes, which meant if
+              one room were to crash, the service would be online for other
+              users as it rebooted. Lastly, I used Phoenix's sockets to push and
+              receive real-time data to all the clients connected to a room.
+            </p>
+            <p class="mobile-hidden">
+              I also quickly built a front-end client in React and TailwindCSS
+              to be able to demo the project. Links to the repos are next to the
+              title.
+            </p>
+            <div class="experience-title">
+              <h2>Finance Tracker</h2>
+              <a
+                href="https://github.com/yung-tat/finance_tracker_be"
+                target="_blank"
+                class="project-link"
+                >Back-end</a
+              >
+              <a
+                href="https://github.com/yung-tat/finance-tracker"
+                target="_blank"
+                class="project-link"
+                >Front-end</a
+              >
+            </div>
+            <p class="first-line mobile-hidden">
+              Soon after learning Elixir, I wanted to finally try building a
+              service to move my finance tracking from just a boring excel sheet
+              to a web app.
+            </p>
+            <p class="mobile-hidden">
+              I used Elixir and Phoenix to build the back-end of the app that
+              stores expense data. It also exposed some endpoints for the
+              front-end to fetch aggregated data for the summary pages. This was
+              my first time starting a Phoenix project from scratch, so I
+              learned a lot about setting up the DB, creating the schemas, using
+              phoenix gen functions, setting up the plugs. Overall, I was able
+              to gain a better understanding of how Elixir and Phoenix works.
+            </p>
+            <p class="mobile-hidden">
+              I built the front-end in React with the JoyUI component library
+              for the styling. At this point I've already had 2 years of
+              front-end experience and ~12 months of experience building admin
+              pages, so this was a nice refresher from the back-end work that I
+              was working on. I did get a better grasp on handling forms.
+            </p>
+            <p class="mobile-hidden">
+              I also built a python script to scrape my PDF bank statements to
+              convert into CSV data to upload into web app.
+            </p>
+          </div>
+          <div id="page-main-interests" class="hidden">
+            <h1 class="mobile-visible">Interests</h1>
+            <p class="first-line">
+              You might have noticed that the landing page of this site was
+              based off the
+              <a
+                href="https://www.youtube.com/watch?v=3AtSZVbclN4"
+                target="_blank"
+                >title cards</a
+              >
+              of one of my favorite shows, "Neon Genesis Evangelion"
+            </p>
+            <p>Here's some of my favorite in a couple interest categories:</p>
+            <h2>Anime</h2>
+            <ul>
+              <li>Neon Genesis Evangelion</li>
+              <li>Gurren Lagann</li>
+            </ul>
+            <h2>Movies</h2>
+            <ul>
+              <li>La La Land</li>
+              <li>Your Name</li>
+            </ul>
+            <h2>Games</h2>
+            <ul>
+              <li>Minecraft 🐐</li>
+              <li>Rocket League</li>
+              <li>
+                <a
+                  href="https://youtu.be/MJbE3uWN9vE?si=h5fud3LwqjsRKZ6g&t=67"
+                  target="_blank"
+                  >Yakuza 0</a
+                >
+              </li>
+            </ul>
+            <h2>Instruments</h2>
+            <ul>
+              <li>Piano</li>
+              <li>Trumpet/Baritone/Trombone</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="content-overflow-container">
+          <div id="content-overflow-top" class="content-overflow">V</div>
+          <div id="content-overflow-bottom" class="content-overflow">V</div>
+        </div>
+
+        <div id="contact-me-container">
+          <a
+            class="contact-me-item"
+            href="https://www.linkedin.com/in/issac-liu-890b281b1/"
+            target="_blank"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="contact-me-item"
+            href="https://github.com/yung-tat/"
+            target="_blank"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                c
+                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
