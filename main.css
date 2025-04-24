@@ -24,7 +24,7 @@
 body,
 html {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   font-family: EvangelionComputerFont, Arial, Helvetica, sans-serif;
   background-color: rgb(10, 10, 10);
   color: white;
@@ -70,7 +70,7 @@ strong {
 #page-landing {
   background-color: black;
   font-family: "EvangelionFont";
-  height: 100vh;
+  height: 100dvh;
   aspect-ratio: 4/3;
   margin-left: auto;
   margin-right: auto;
@@ -111,7 +111,7 @@ strong {
   #page-landing {
     background-color: black;
     font-family: "EvangelionFont";
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     padding: 4cqw;
     box-sizing: border-box;
@@ -132,7 +132,7 @@ strong {
 #page-main-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100dvh;
   aspect-ratio: 4/3;
   margin-left: auto;
   margin-right: auto;
@@ -452,9 +452,9 @@ strong {
   }
 }
 
-@media (max-width: 1200px) {
-  #page-main-container {
-    font-size: 24px;
+@media (max-width: 1200px) or (max-height: 700px) {
+  html {
+    font-size: 14px;
   }
 
   .project-link {
